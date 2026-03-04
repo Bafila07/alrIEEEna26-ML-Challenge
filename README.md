@@ -54,6 +54,18 @@ Soft voting ensemble: **LightGBM + XGBoost**
 | F1 Score   | 98.67%  |
 | Precision  | 99.26%  |
 | Recall     | 98.09%  |
+| **AUC**    | **0.9993** |
+
+---
+
+## ROC Curve
+
+> AUC = 0.9993 — The curve hugging the top-left corner confirms the 
+> ensemble distinguishes Normal vs Faulty devices with near-perfect confidence.
+
+![ROC Curve](roc_curve.png)
+
+---
 
 Test predictions saved in `FINAL.csv`.
 
@@ -63,6 +75,7 @@ Test predictions saved in `FINAL.csv`.
 |------|-------------|
 | `alrIEEEna26_ML_Challenge.ipynb` | Full notebook with EDA, feature engineering, training and evaluation |
 | `FINAL.csv` | Final test predictions (10,944 rows, ID and CLASS columns) |
+| `roc_curve.png` | ROC Curve of the ensemble model |
 | `README.md` | This file |
 
 ## Setup & Run
